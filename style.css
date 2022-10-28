@@ -1,0 +1,90 @@
+body{
+    background-color: white;
+    padding: 10px;
+}
+main{
+    border: 2px solid black;
+    padding: 10px;
+}
+header{
+    border: 2px solid black;
+    padding: 10px;
+}
+nav{
+    border: 2px solid black;
+    background-color: rgb(189, 186, 186);
+    padding: 10px;
+}
+.kiskep img, .nagykep img{
+    width: 100%;
+}
+
+nav .menu  li a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+nav menu li a:hover, a:active {
+    background-color: rgb(209, 133, 133);
+  }
+nav .menu1 li{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+nav .menu li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu1 ul {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.menu a {
+   border: 2px solid red;
+   background-color: red;
+   color: white;
+}
+.menu1 a{
+    color: red;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    text-decoration: none;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 10px;
+
+}
+.nagykep{
+    border: 2px solid black ;
+    padding: 10px;
+}
+.kiskep{
+    border: 2px solid black;
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    padding: 10px;
+}
+.kep{
+    border: 2px solid black;
+}
+@media screen and (max-width: 800px) {
+    .kiskep{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .kiskep{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-template-columns: 1fr;
+    }
+}
